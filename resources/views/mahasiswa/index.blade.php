@@ -49,4 +49,12 @@
         </tr>
         @endforeach
     </table>
+
+    <!-- perhatikan script di bawah ini untuk membuat paginasi dan yang berkaitan dengan paginasi -->
+    Current Page    : {{ $mahasiswa->currentPage() }}<br>
+    Jumlah Data     : {{ $mahasiswa->total() }}<br>
+    Data perhalaman : {{ $mahasiswa->perPage() }}<br>
+    <br>
+    <br>
+    {{ $mahasiswa->links() }}
 @endsection
